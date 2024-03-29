@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Email Template</title>
+</head>
+<body style="padding: 0;margin: 0;">
+    <table width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+            <td align="center" style="padding: 0;">
+                <table width="600" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td align="center" style="background-color: #f8f9fa; padding: 20px;">
+                            <h2 style="color: #6c757d;">Welcome to Test-Email Sender with Python</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 20px; background-color: #fff;">
+                            <p style="color: #6c757d;">Hello,<br/>
+                                <b style="font-size: 16px; color: #6c757d;">
+                                    {{sender.email}}
+                                </b>
+                            </p>
+                            
+                            <p style="font-size: 16px; color: #6c757d;">This is a simple responsive HTML email template. You can replace this text with your own content.</p>
+                            <p style="font-size: 16px; color: #6c757d;">
+                                Best Regards,<br/>
+                                <b style="font-size: 16px; color: #6c757d;">
+                                    {{receiver.name}}
+                                </b>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="background-color: #f8f9fa; padding: 20px;">
+                            <p id="year" style="font-size: 14px; color: #6c757d;"></p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script>
+        document.getElementById('year').innerHTML = "&copy; " + new Date().getFullYear() + " Your Company";
+    </script>
+</body>
+</html>
